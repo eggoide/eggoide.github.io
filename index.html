@@ -96,6 +96,41 @@
       background-color: #F8F2E2;
       color: #999;
     }
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .member-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .member-info {
+      flex: 1;
+    }
+
+    .member-info h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      color: #173B63;
+    }
+    
+    .member-info a {
+      margin-bottom: 0.5rem;
+      color: #173B63;
+      text-decoration: none;
+    }    
+
+    .member-info p {
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -119,11 +154,57 @@
   <section class="section" id="quienes">
     <h2>QUIÉNES SOMOS</h2>
     <p>Vencevía Horizonte es una empresa internacional especializada en comercio exterior, con enfoque en América Latina y Europa. Conectamos productos, culturas y oportunidades.</p>
+
+    <div class="team-member">
+      <img src="ondrej.png" alt="Ondrej Musil" class="member-photo">
+      <div class="member-info">
+        <h3>Ondrej Musil</h3>
+        <p>Director ejecutivo (CEO) de Vencevía Horizonte. Con amplia experiencia en comercio internacional y una visión estratégica que impulsa la expansión entre Europa y América Latina.</p>
+        <p><a href="mailto:ondrej.musil@vencevia.com">ondrej.musil@vencevia.com</a></p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="member-info">
+        <h3>Lucía Fernández</h3>
+        <p>Responsable de desarrollo de negocios en América Latina. Su enfoque conecta oportunidades locales con redes internacionales.</p>
+        <p><a href="mailto:lucia.fernandez@vencevia.com">lucia.fernandez@vencevia.com</a></p>
+      </div>
+      <img src="lucia.png" alt="Lucía Fernández" class="member-photo">
+    </div>
+
+    <div class="team-member">
+      <img src="sofia.png" alt="Sofía Gómez" class="member-photo">
+      <div class="member-info">
+        <h3>Sofía Gómez</h3>
+        <p>Responsable de operaciones en Europa. Supervisa la coordinación logística y las alianzas estratégicas con nuestros socios europeos.</p>
+        <p><a href="mailto:sofia.gomez@vencevia.com">sofia.gomez@vencevia.com</a></p>
+      </div>
+    </div>    
+
+    <div class="team-member">
+      <div class="member-info">
+        <h3>Javier Castillo</h3>
+        <p>Jefe del departamento de contabilidad, con base en Bogotá. Garantiza la transparencia financiera y el cumplimiento normativo en América Latina y Europa.</p>
+        <p><a href="mailto:javier.castillo@vencevia.com">javier.castillo@vencevia.com</a></p>
+      </div>
+      <img src="javier.png" alt="Javier Castillo" class="member-photo">
+    </div>    
+
   </section>
+
 
   <section class="section" id="servicios">
     <h2>SERVICIOS</h2>
-    <p>Ofrecemos soluciones completas de importación, exportación, representación comercial y asesoría logística.</p>
+    <p>
+      Ofrecemos soluciones integrales para la importación, exportación, representación comercial y asesoría logística. 
+      Nos especializamos en conectar empresas europeas con proveedores y socios en América Latina, así como en facilitar la expansión de productos y servicios latinoamericanos hacia el mercado europeo.
+    </p>
+    <p>
+      Contamos con una red de contactos y experiencia práctica que nos permite identificar y desarrollar oportunidades comerciales reales, tanto en sectores tradicionales como emergentes.
+      Si tienes un proyecto o idea con potencial internacional, estaremos encantados de ayudarte a hacerlo realidad.
+    </p>
+
   </section>
 
   <section class="section" id="regiones">
@@ -133,9 +214,32 @@
   </section>
 
   <div class="contact" id="contacto">
-    <h2>Contacto</h2>
-    <p>Escríbenos a <a href="mailto:info@vencevia.com">info@vencevia.com</a></p>
+    <h2>Contacto</h2><br>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+      <div style="flex: 1; min-width: 250px; text-align: left;">
+        <p><strong>Dirección:</strong><br>
+        Vencevía Horizonte Ltd.<br>
+        Na příkopě 12<br>
+        110 00 Praha 1<br>
+        República Checa</p>
+        <p><strong>Tel:</strong> +420 602 944 753</p>
+        <p><strong>Email:</strong>
+        <a href="mailto:info@vencevia.com">info@vencevia.com</a></p>
+      </div>
+      <div style="flex: 1; min-width: 250px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.970804365594!2d14.423674115715276!3d50.08745107942862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e4218c1cfd%3A0xbee8999cbff1a88a!2sNa%20P%C5%99%C3%ADkop%C4%9B%2012%2C%20110%2000%20Star%C3%A9%20M%C4%9Bsto%2C%20%C4%8Cesk%C3%A1%20republika!5e0!3m2!1sen!2scz!4v1620000000000!5m2!1sen!2scz" 
+          width="100%" 
+          height="200" 
+          style="border:0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
   </div>
+
 
   <footer>
     &copy; 2025 Vencevía Horizonte. Todos los derechos reservados.
