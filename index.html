@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vencevía Horizonte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #F8F2E2;
+      color: #173B63;
+      line-height: 1.6;
+    }
+    .topbar {
+      background-color: #F8F2E2;
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 2rem;
+      z-index: 20;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+    .topbar img {
+      max-height: 150px;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #173B63;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #F4A024;
+    }
+    .hero {
+      position: relative;
+      background: url('background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: #F8F2E2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+      padding-top: 6rem;
+    }
+    .hero-content {
+      max-width: 600px;
+      background-color: rgba(23, 59, 99, 0.7);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .hero-content h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #F4A024;
+    }
+    .section p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact {
+      background-color: #173B63;
+      color: #F8F2E2;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .contact a {
+      color: #F4A024;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      background-color: #F8F2E2;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="logo.png" alt="Logo Vencevía Horizonte">
+    <nav>
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#regiones">Regiones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Vencevía Horizonte</h1>
+      <p>Especialistas en comercio internacional con enfoque en América Latina y Europa. Conectamos mercados, culturas y oportunidades.</p>
+    </div>
+  </div>
+
+  <section class="section" id="quienes">
+    <h2>QUIÉNES SOMOS</h2>
+    <p>Vencevía Horizonte es una empresa internacional especializada en comercio exterior, con enfoque en América Latina y Europa. Conectamos productos, culturas y oportunidades.</p>
+  </section>
+
+  <section class="section" id="servicios">
+    <h2>SERVICIOS</h2>
+    <p>Ofrecemos soluciones completas de importación, exportación, representación comercial y asesoría logística.</p>
+  </section>
+
+  <section class="section" id="regiones">
+    <h2>REGIONES</h2>
+    <p>Estamos presentes en México, Colombia, Chile, España, República Checa y otros mercados clave en expansión.</p>
+    <img src="mapa_regiones.png" alt="Mapa de regiones" style="width:100%; max-width:600px; display: block; margin: 2rem auto; margin-top:2rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  </section>
+
+  <div class="contact" id="contacto">
+    <h2>Contacto</h2>
+    <p>Escríbenos a <a href="mailto:info@vencevia.com">info@vencevia.com</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Vencevía Horizonte. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
