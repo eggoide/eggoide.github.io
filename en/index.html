@@ -53,8 +53,12 @@
       .topbar img {
         max-height: 150px;
       }
+      .nav-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
       nav a {
-        margin-left: 1.5rem;
         text-decoration: none;
         color: #173B63;
         font-weight: 600;
@@ -62,6 +66,10 @@
       }
       nav a:hover {
         color: #F4A024;
+      }
+      .lang-switcher {
+        margin-left: 2rem;
+        font-weight: 400;
       }
       .hero {
         position: relative;
@@ -147,15 +155,17 @@
   <body>
     <div class="topbar">
       <img src="/logo.png" alt="Vencevía Horizonte Logo">
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#regions">Regions</a>
-        <a href="#contact">Contact</a>
-        <span style="margin-left: 2rem; font-weight: 400;">
+      <div class="nav-wrapper">
+        <nav>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#regions">Regions</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="lang-switcher">
           <a href="/">Español</a> | <a href="/en/">English</a>
-        </span>
-      </nav>
+        </div>
+      </div>
     </div>
 
     <div class="hero">
