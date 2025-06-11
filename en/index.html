@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vencevía Horizonte – International Trade Europe ↔ Latin America</title>
+    <title>Vencevía Horizonte</title>
 
     <!-- SEO meta tags -->
     <meta name="description" content="Vencevía Horizonte – international trade between Europe and Latin America. We connect businesses, products, and opportunities.">
@@ -95,6 +95,10 @@
         margin-bottom: 1rem;
         color: #F4A024;
       }
+      .section p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
       .contact {
         background-color: #173B63;
         color: #F8F2E2;
@@ -108,14 +112,49 @@
         background-color: #F8F2E2;
         color: #999;
       }
+      .team-member {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      .member-photo {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+      .member-info {
+        flex: 1;
+      }
+      .member-info h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+        color: #173B63;
+      }
+      .member-info a {
+        margin-bottom: 0.5rem;
+        color: #173B63;
+        text-decoration: none;
+      }
+      .member-info p {
+        font-size: 1rem;
+      }
     </style>
   </head>
   <body>
     <div class="topbar">
       <img src="/logo.png" alt="Vencevía Horizonte Logo">
       <nav>
-        <a href="/">Español</a>
-        <a href="/en/" style="margin-left: 1rem;">English</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#regions">Regions</a>
+        <a href="#contact">Contact</a>
+        <span style="margin-left: 2rem; font-weight: 400;">
+          <a href="/">Español</a> | <a href="/en/">English</a>
+        </span>
       </nav>
     </div>
 
@@ -129,6 +168,42 @@
     <section class="section" id="about">
       <h2>ABOUT US</h2>
       <p>Vencevía Horizonte is an international company specialized in foreign trade, focusing on Latin America and Europe. We connect products, cultures, and business opportunities.</p>
+
+      <div class="team-member">
+        <img src="/ondrej.jpg" alt="Ondrej Musil" class="member-photo">
+        <div class="member-info">
+          <h3>Ondrej Musil</h3>
+          <p>CEO of Vencevía Horizonte. With broad experience in international trade and a strategic vision that drives expansion between Europe and Latin America.</p>
+          <p><a href="mailto:ondrej.musil@vencevia.com">ondrej.musil@vencevia.com</a></p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <div class="member-info">
+          <h3>Lucía Fernández</h3>
+          <p>Business Development Manager for Latin America. She connects local opportunities with international networks.</p>
+          <p><a href="mailto:lucia.fernandez@vencevia.com">lucia.fernandez@vencevia.com</a></p>
+        </div>
+        <img src="/lucia.jpg" alt="Lucía Fernández" class="member-photo">
+      </div>
+
+      <div class="team-member">
+        <img src="/sofia.jpg" alt="Ximena Cárdenas" class="member-photo">
+        <div class="member-info">
+          <h3>Ximena Cárdenas</h3>
+          <p>Head of Operations in Europe. Oversees logistics coordination and strategic partnerships with our European partners.</p>
+          <p><a href="mailto:ximena.cardenas@vencevia.com">ximena.cardenas@vencevia.com</a></p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <div class="member-info">
+          <h3>Javier Castillo</h3>
+          <p>Head of Accounting Department based in Bogotá. Ensures financial transparency and regulatory compliance in Latin America and Europe.</p>
+          <p><a href="mailto:javier.castillo@vencevia.com">javier.castillo@vencevia.com</a></p>
+        </div>
+        <img src="/javier.jpg" alt="Javier Castillo" class="member-photo">
+      </div>
     </section>
 
     <section class="section" id="services">
@@ -144,15 +219,31 @@
     </section>
 
     <div class="contact" id="contact">
-      <h2>Contact</h2>
-      <p><strong>Address:</strong><br>
-        Vencevía Horizonte<br>
-        Ondrej Musil s.r.o.<br>
-        Kaprova 42/14<br>
-        110 00 Prague 1<br>
-        Czech Republic</p>
-      <p><strong>Phone:</strong> +420 602 944 753</p>
-      <p><strong>Email:</strong> <a href="mailto:info@vencevia.com">info@vencevia.com</a></p>
+      <h2>Contact</h2><br>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+        <div style="flex: 1; min-width: 250px; text-align: left;">
+          <p><strong>Address:</strong><br>
+          <strong>Vencevía Horizonte</strong><br>
+          Ondrej Musil s.r.o.<br>
+          Kaprova 42/14<br>
+          110 00 Prague 1<br>
+          Czech Republic</p>
+          <p><strong>Phone:</strong> +420 602 944 753</p>
+          <p><strong>Email:</strong>
+          <a href="mailto:info@vencevia.com">info@vencevia.com</a></p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.9128346932384!2d14.415892777544055!3d50.087918813399284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e8e9bf533d%3A0x6b6bc6db31022ebe!2sKaprova%2042%2F14%2C%20110%2000%20Star%C3%A9%20M%C4%9Bsto!5e0!3m2!1sen!2scz!4v1749579136898!5m2!1sen!2scz" 
+            width="100%" 
+            height="200" 
+            style="border:0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
     </div>
 
     <footer>
