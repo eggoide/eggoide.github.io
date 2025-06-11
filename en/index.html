@@ -1,263 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vencevía Horizonte</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vencevía Horizonte</title>
 
-    <!-- SEO meta tags -->
-    <meta name="description" content="Vencevía Horizonte – international trade between Europe and Latin America. We connect businesses, products, and opportunities.">
-    <meta name="keywords" content="international trade, Europe, Latin America, export, import, logistics consulting, commercial representation">
-    <link rel="canonical" href="https://vencevia.com/en/">
+  <!-- SEO meta tags -->
+  <meta name="description" content="Vencevía Horizonte – international trade between Europe and Latin America. We connect companies, products, and opportunities.">
+  <meta name="keywords" content="international trade, Europe, Latin America, export, import, logistics consulting, commercial representation">
+  <link rel="canonical" href="https://vencevia.com/en/">
 
-    <!-- Language links -->
-    <link rel="alternate" hreflang="es" href="https://vencevia.com/" />
-    <link rel="alternate" hreflang="en" href="https://vencevia.com/en/" />
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vencevía Horizonte – International Trade Europe ↔ Latin America">
+  <meta property="og:description" content="We offer comprehensive solutions to connect markets and expand businesses between Europe and Latin America.">
+  <meta property="og:url" content="https://vencevia.com/en/">
+  <meta property="og:image" content="https://vencevia.com/logo.png">
+  <meta property="og:locale" content="en_US">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Vencevía Horizonte – International Trade Europe ↔ Latin America">
-    <meta property="og:description" content="We offer integral solutions for connecting markets and expanding business between Europe and Latin America.">
-    <meta property="og:url" content="https://vencevia.com/en/">
-    <meta property="og:image" content="https://vencevia.com/logo.png">
-    <meta property="og:locale" content="en_US">
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vencevía Horizonte – International Trade Europe ↔ Latin America">
+  <meta name="twitter:description" content="Solutions to connect markets, cultures, and opportunities.">
+  <meta name="twitter:image" content="https://vencevia.com/logo.png">
 
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vencevía Horizonte – International Trade Europe ↔ Latin America">
-    <meta name="twitter:description" content="Solutions to connect markets, cultures, and opportunities.">
-    <meta name="twitter:image" content="https://vencevia.com/logo.png">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #F8F2E2;
+      color: #173B63;
+      line-height: 1.6;
+    }
+    .topbar {
+      background-color: #F8F2E2;
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 2rem;
+      z-index: 20;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+    .topbar img {
+      max-height: 150px;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #173B63;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #F4A024;
+    }
+    .hero {
+      position: relative;
+      background: url('background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: #F8F2E2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+      padding-top: 6rem;
+    }
+    .hero-content {
+      max-width: 600px;
+      background-color: rgba(23, 59, 99, 0.7);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .hero-content h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #F4A024;
+    }
+    .section p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact {
+      background-color: #173B63;
+      color: #F8F2E2;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .contact a {
+      color: #F4A024;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      background-color: #F8F2E2;
+      color: #999;
+    }
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
 
-    <style>
-      body {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #F8F2E2;
-        color: #173B63;
-        line-height: 1.6;
-        margin: 0;
-      }
-      .topbar {
-        background-color: #F8F2E2;
-        position: fixed;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.5rem 2rem;
-        z-index: 20;
-        box-shadow: 0 1px 5px rgba(0,0,0,0.05);
-      }
-      .topbar img {
-        max-height: 150px;
-      }
-      .nav-wrapper {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-      }
-      nav a {
-        text-decoration: none;
-        color: #173B63;
-        font-weight: 600;
-        transition: color 0.3s;
-      }
-      nav a:hover {
-        color: #F4A024;
-      }
-      .lang-switcher {
-        margin-left: 2rem;
-        font-weight: 400;
-      }
-      .hero {
-        position: relative;
-        background: url('/background.jpg') no-repeat center center/cover;
-        height: 100vh;
-        color: #F8F2E2;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2rem;
-        padding-top: 6rem;
-      }
-      .hero-content {
-        max-width: 600px;
-        background-color: rgba(23, 59, 99, 0.7);
-        padding: 2rem;
-        border-radius: 8px;
-      }
-      .hero-content h1 {
-        font-size: 2.8rem;
-        font-weight: 800;
-        margin-bottom: 1rem;
-      }
-      .section {
-        padding: 3rem 1rem;
-        max-width: 1000px;
-        margin: 0 auto;
-      }
-      .section h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        color: #F4A024;
-      }
-      .section p {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-      }
-      .contact {
-        background-color: #173B63;
-        color: #F8F2E2;
-        padding: 2rem 1rem;
-        text-align: center;
-      }
-      footer {
-        text-align: center;
-        font-size: 0.9rem;
-        padding: 1rem;
-        background-color: #F8F2E2;
-        color: #999;
-      }
-      .team-member {
-        display: flex;
-        align-items: center;
-        margin-top: 2rem;
-        gap: 2rem;
-        flex-wrap: wrap;
-      }
-      .member-photo {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      }
-      .member-info {
-        flex: 1;
-      }
-      .member-info h3 {
-        margin-bottom: 0.5rem;
-        font-size: 1.25rem;
-        color: #173B63;
-      }
-      .member-info a {
-        margin-bottom: 0.5rem;
-        color: #173B63;
-        text-decoration: none;
-      }
-      .member-info p {
-        font-size: 1rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="topbar">
-      <img src="/logo.png" alt="Vencevía Horizonte Logo">
-      <div class="nav-wrapper">
-        <nav>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#regions">Regions</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="lang-switcher">
-          <a href="/">Español</a> | <a href="/en/">English</a>
-        </div>
+    .member-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .member-info {
+      flex: 1;
+    }
+
+    .member-info h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      color: #173B63;
+    }
+
+    .member-info a {
+      margin-bottom: 0.5rem;
+      color: #173B63;
+      text-decoration: none;
+    }
+
+    .member-info p {
+      font-size: 1rem;
+    }
+  </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vencevía Horizonte",
+  "url": "https://vencevia.com/en/",
+  "logo": "https://vencevia.com/logo.png",
+  "email": "info@vencevia.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kaprova 42/14",
+    "addressLocality": "Prague",
+    "postalCode": "110 00",
+    "addressCountry": "CZ"
+  }
+}
+</script>
+
+<!-- Language versions -->
+<link rel="alternate" hreflang="es" href="https://vencevia.com/" />
+<link rel="alternate" hreflang="en" href="https://vencevia.com/en/" />
+</head>
+<body>
+  <div class="topbar">
+    <img src="logo.png" alt="Vencevía Horizonte Logo">
+    <nav>
+      <a href="#quienes">About Us</a>
+      <a href="#servicios">Services</a>
+      <a href="#regiones">Regions</a>
+      <a href="#contacto">Contact</a>
+      <span style="margin-left: 2rem; font-weight: 400;">
+        <a href="/">Español</a>|
+        <a href="/en/">English</a>
+      </span>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Vencevía Horizonte</h1>
+      <p>Specialists in international trade with a focus on Latin America and Europe. We connect markets, cultures, and opportunities.</p>
+    </div>
+  </div>
+
+  <section class="section" id="quienes">
+    <h2>ABOUT US</h2>
+    <p>Vencevía Horizonte is an international company specialized in foreign trade, focusing on Latin America and Europe. We connect products, cultures, and opportunities.</p>
+
+    <div class="team-member">
+      <img src="ondrej.jpg" alt="Ondrej Musil" class="member-photo">
+      <div class="member-info">
+        <h3>Ondrej Musil</h3>
+        <p>CEO of Vencevía Horizonte. With extensive experience in international trade and a strategic vision driving expansion between Europe and Latin America.</p>
+        <p><a href="mailto:ondrej.musil@vencevia.com">ondrej.musil@vencevia.com</a></p>
       </div>
     </div>
 
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Vencevía Horizonte</h1>
-        <p>Experts in international trade with a focus on Latin America and Europe. We connect markets, cultures, and opportunities.</p>
+    <div class="team-member">
+      <div class="member-info">
+        <h3>Lucía Fernández</h3>
+        <p>Business development manager in Latin America. Her approach connects local opportunities with international networks.</p>
+        <p><a href="mailto:lucia.fernandez@vencevia.com">lucia.fernandez@vencevia.com</a></p>
+      </div>
+      <img src="lucia.jpg" alt="Lucía Fernández" class="member-photo">
+    </div>
+
+    <div class="team-member">
+      <img src="sofia.jpg" alt="Ximena Cárdenas" class="member-photo">
+      <div class="member-info">
+        <h3>Ximena Cárdenas</h3>
+        <p>Head of operations in Europe. Oversees logistics coordination and strategic alliances with our European partners.</p>
+        <p><a href="mailto:ximena.cardenas@vencevia.com">ximena.cardenas@vencevia.com</a></p>
       </div>
     </div>
 
-    <section class="section" id="about">
-      <h2>ABOUT US</h2>
-      <p>Vencevía Horizonte is an international company specialized in foreign trade, focusing on Latin America and Europe. We connect products, cultures, and business opportunities.</p>
-
-      <div class="team-member">
-        <img src="/ondrej.jpg" alt="Ondrej Musil" class="member-photo">
-        <div class="member-info">
-          <h3>Ondrej Musil</h3>
-          <p>CEO of Vencevía Horizonte. With broad experience in international trade and a strategic vision that drives expansion between Europe and Latin America.</p>
-          <p><a href="mailto:ondrej.musil@vencevia.com">ondrej.musil@vencevia.com</a></p>
-        </div>
+    <div class="team-member">
+      <div class="member-info">
+        <h3>Javier Castillo</h3>
+        <p>Head of the accounting department, based in Bogotá. Ensures financial transparency and regulatory compliance in Latin America and Europe.</p>
+        <p><a href="mailto:javier.castillo@vencevia.com">javier.castillo@vencevia.com</a></p>
       </div>
+      <img src="javier.jpg" alt="Javier Castillo" class="member-photo">
+    </div>
+  </section>
 
-      <div class="team-member">
-        <div class="member-info">
-          <h3>Lucía Fernández</h3>
-          <p>Business Development Manager for Latin America. She connects local opportunities with international networks.</p>
-          <p><a href="mailto:lucia.fernandez@vencevia.com">lucia.fernandez@vencevia.com</a></p>
-        </div>
-        <img src="/lucia.jpg" alt="Lucía Fernández" class="member-photo">
+  <section class="section" id="servicios">
+    <h2>SERVICES</h2>
+    <p>
+      We offer comprehensive solutions for import, export, commercial representation, and logistics consulting.
+      We specialize in connecting European companies with suppliers and partners in Latin America, as well as facilitating the expansion of Latin American products and services to the European market.
+    </p>
+    <p>
+      We have a network of contacts and hands-on experience that allows us to identify and develop real business opportunities in both traditional and emerging sectors.
+      If you have a project or idea with international potential, we would be delighted to help you make it a reality.
+    </p>
+  </section>
+
+  <section class="section" id="regiones">
+    <h2>REGIONS</h2>
+    <p>We are present in Mexico, Colombia, Chile, Spain, the Czech Republic, and other key expanding markets.</p>
+    <img src="mapa_regiones.jpg" alt="Regions map" style="width:100%; max-width:600px; display: block; margin: 2rem auto; margin-top:2rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  </section>
+
+  <div class="contact" id="contacto">
+    <h2>Contact</h2><br>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+      <div style="flex: 1; min-width: 250px; text-align: left;">
+        <p><strong>Address:</strong><br>
+        <strong>Vencevía Horizonte</strong><br>
+        Ondrej Musil s.r.o.<br>
+        Kaprova 42/14<br>
+        110 00 Prague 1<br>
+        Czech Republic</p>
+        <p><strong>Phone:</strong> +420 602 944 753</p>
+        <p><strong>Email:</strong>
+        <a href="mailto:info@vencevia.com">info@vencevia.com</a></p>
       </div>
-
-      <div class="team-member">
-        <img src="/sofia.jpg" alt="Ximena Cárdenas" class="member-photo">
-        <div class="member-info">
-          <h3>Ximena Cárdenas</h3>
-          <p>Head of Operations in Europe. Oversees logistics coordination and strategic partnerships with our European partners.</p>
-          <p><a href="mailto:ximena.cardenas@vencevia.com">ximena.cardenas@vencevia.com</a></p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="member-info">
-          <h3>Javier Castillo</h3>
-          <p>Head of Accounting Department based in Bogotá. Ensures financial transparency and regulatory compliance in Latin America and Europe.</p>
-          <p><a href="mailto:javier.castillo@vencevia.com">javier.castillo@vencevia.com</a></p>
-        </div>
-        <img src="/javier.jpg" alt="Javier Castillo" class="member-photo">
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <h2>SERVICES</h2>
-      <p>We offer comprehensive solutions for import, export, commercial representation, and logistics consulting. We specialize in connecting European companies with partners and suppliers in Latin America, as well as helping Latin American businesses expand into the European market.</p>
-      <p>With our network and practical experience, we identify and develop real commercial opportunities across traditional and emerging sectors.</p>
-    </section>
-
-    <section class="section" id="regions">
-      <h2>REGIONS</h2>
-      <p>We are present in Mexico, Colombia, Chile, Spain, the Czech Republic, and other key growing markets.</p>
-      <img src="/mapa_regiones.jpg" alt="Region map" style="width:100%; max-width:600px; display: block; margin: 2rem auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-    </section>
-
-    <div class="contact" id="contact">
-      <h2>Contact</h2><br>
-      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; max-width: 1000px; margin: 0 auto;">
-        <div style="flex: 1; min-width: 250px; text-align: left;">
-          <p><strong>Address:</strong><br>
-          <strong>Vencevía Horizonte</strong><br>
-          Ondrej Musil s.r.o.<br>
-          Kaprova 42/14<br>
-          110 00 Prague 1<br>
-          Czech Republic</p>
-          <p><strong>Phone:</strong> +420 602 944 753</p>
-          <p><strong>Email:</strong>
-          <a href="mailto:info@vencevia.com">info@vencevia.com</a></p>
-        </div>
-        <div style="flex: 1; min-width: 250px;">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.9128346932384!2d14.415892777544055!3d50.087918813399284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e8e9bf533d%3A0x6b6bc6db31022ebe!2sKaprova%2042%2F14%2C%20110%2000%20Star%C3%A9%20M%C4%9Bsto!5e0!3m2!1sen!2scz!4v1749579136898!5m2!1sen!2scz" 
-            width="100%" 
-            height="200" 
-            style="border:0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+      <div style="flex: 1; min-width: 250px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.9128346932384!2d14.415892777544055!3d50.087918813399284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e8e9bf533d%3A0x6b6bc6db31022ebe!2sKaprova%2042%2F14%2C%20110%2000%20Star%C3%A9%20M%C4%9Bsto!5e0!3m2!1sen!2scz!4v1749579136898!5m2!1sen!2scz" 
+          width="100%" 
+          height="200" 
+          style="border:0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
+  </div>
 
-    <footer>
-      &copy; 2025 Vencevía Horizonte. All rights reserved.
-    </footer>
-  </body>
+  <footer>
+    &copy; 2025 Vencevía Horizonte. All rights reserved.
+  </footer>
+</body>
 </html>
